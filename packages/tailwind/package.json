@@ -1,0 +1,30 @@
+{
+  "name": "@bitwhys/tailwind",
+  "version": "0.0.0",
+  "description": "Tailwind CSS for Bit",
+  "author": "George Bockari <bit@creight.dev>",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react",
+    "dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "dependencies": {
+    "@bitwhys/utils": "workspace:*",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/typography": "^0.5.9"
+  },
+  "devDependencies": {
+    "@bitwhys/tsconfig": "workspace:*",
+    "@radix-ui/colors": "^0.1.8",
+    "tailwindcss": "^3.3.1",
+    "tsup": "^6.7.0"
+  }
+}

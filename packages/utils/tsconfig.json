@@ -1,4 +1,5 @@
 {
   "extends": "@bitwhys/tsconfig/react-library.json",
-  "include": ["lib/**/*"]
+  "include": ["."],
+  "exclude": ["node_modules", "dist", "build"]
 }
