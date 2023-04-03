@@ -1,0 +1,10 @@
+{
+  "name": "@bitwhys/utils",
+  "version": "0.0.0",
+  "description": "A collection of utility functions",
+  "author": "George Bockari <bit@creight.dev>",
+  "main": "./lib/index.ts",
+  "devDependencies": {
+    "@bitwhys/tsconfig": "workspace:*"
+  }
+}
